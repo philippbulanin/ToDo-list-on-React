@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list {
+    display: flex;
+    background-image: url("img/list-bg.png");
+    flex-direction: column;
+    width: 800px;
+    min-height: 800px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.head {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.editor {
+    border: 2px solid rgba(255,255,255,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.editor-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.input-text {
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+    width: 70%;
+    height: 40px;
+    font-size: 24px;
+    padding-left: 10px;
+    background: transparent;
+    color: white;
+    font-family: "Times New Roman";
+}
+
+.input-error {
+    background: transparent;
+    font-size: 20px;
+    border-bottom: 2px solid rgba(255,0,0,0.5);
+}
+
+.add-note-btn {
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: white;
+    background: black;
+    outline: none;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+}
+
+.add-note-btn:hover {
+    background: grey;
+}
+
+.editor-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.clear-btn, .delete-checked-btn {
+    width: 120px;
+    margin: 0px 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.clear-btn:hover, .delete-checked-btn:hover {
+    background: black;
+    color: white;
+}
+
+.note {
+    width: 100%;
+    min-height: 100px;
+    background: rgba(255,255,255,0.7);
+    padding: 20px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.note-text {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 24px;
+}
+
+.checked {
+    color: rgba(0,0,0,0.4);
+    font-style: italic;
+    background: rgba(255,255,255,0.2);
+}
+
+.check {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    border: none;
+}
+
+.delete {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-image: url("img/close24.png");
+    cursor: pointer;
+}
+.delete:hover {
+    background-image: url("img/close24-h.png");
+}
+
+.statistic-data {
+    color: white;
+}
